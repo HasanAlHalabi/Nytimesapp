@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045B1D8A27285DF3002C0163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1D8927285DF3002C0163 /* AppDelegate.swift */; };
+		045B1D8C27285DF3002C0163 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1D8B27285DF3002C0163 /* SceneDelegate.swift */; };
+		045B1D8E27285DF3002C0163 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1D8D27285DF3002C0163 /* ViewController.swift */; };
+		045B1D9127285DF3002C0163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B1D8F27285DF3002C0163 /* Main.storyboard */; };
+		045B1D9327285DF4002C0163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045B1D9227285DF4002C0163 /* Assets.xcassets */; };
+		045B1D9627285DF4002C0163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B1D9427285DF4002C0163 /* LaunchScreen.storyboard */; };
+		045B1DA127285DF4002C0163 /* NytimersappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DA027285DF4002C0163 /* NytimersappTests.swift */; };
+		045B1DAB27285DF4002C0163 /* NytimersappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DAA27285DF4002C0163 /* NytimersappUITests.swift */; };
+		045B1DAD27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DAC27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045B1D9D27285DF4002C0163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045B1D7E27285DF3002C0163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045B1D8527285DF3002C0163;
+			remoteInfo = Nytimersapp;
+		};
+		045B1DA727285DF4002C0163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045B1D7E27285DF3002C0163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045B1D8527285DF3002C0163;
+			remoteInfo = Nytimersapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045B1D8627285DF3002C0163 /* Nytimersapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nytimersapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045B1D8927285DF3002C0163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		045B1D8B27285DF3002C0163 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		045B1D8D27285DF3002C0163 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		045B1D9027285DF3002C0163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		045B1D9227285DF4002C0163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045B1D9527285DF4002C0163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045B1D9727285DF4002C0163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045B1D9C27285DF4002C0163 /* NytimersappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NytimersappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045B1DA027285DF4002C0163 /* NytimersappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytimersappTests.swift; sourceTree = "<group>"; };
+		045B1DA627285DF4002C0163 /* NytimersappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NytimersappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045B1DAA27285DF4002C0163 /* NytimersappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytimersappUITests.swift; sourceTree = "<group>"; };
+		045B1DAC27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytimersappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045B1D8327285DF3002C0163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045B1D9927285DF4002C0163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045B1DA327285DF4002C0163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045B1D7D27285DF3002C0163 = {
+			isa = PBXGroup;
+			children = (
+				045B1D8827285DF3002C0163 /* Nytimersapp */,
+				045B1D9F27285DF4002C0163 /* NytimersappTests */,
+				045B1DA927285DF4002C0163 /* NytimersappUITests */,
+				045B1D8727285DF3002C0163 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		045B1D8727285DF3002C0163 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045B1D8627285DF3002C0163 /* Nytimersapp.app */,
+				045B1D9C27285DF4002C0163 /* NytimersappTests.xctest */,
+				045B1DA627285DF4002C0163 /* NytimersappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045B1D8827285DF3002C0163 /* Nytimersapp */ = {
+			isa = PBXGroup;
+			children = (
+				045B1D8927285DF3002C0163 /* AppDelegate.swift */,
+				045B1D8B27285DF3002C0163 /* SceneDelegate.swift */,
+				045B1D8D27285DF3002C0163 /* ViewController.swift */,
+				045B1D8F27285DF3002C0163 /* Main.storyboard */,
+				045B1D9227285DF4002C0163 /* Assets.xcassets */,
+				045B1D9427285DF4002C0163 /* LaunchScreen.storyboard */,
+				045B1D9727285DF4002C0163 /* Info.plist */,
+			);
+			path = Nytimersapp;
+			sourceTree = "<group>";
+		};
+		045B1D9F27285DF4002C0163 /* NytimersappTests */ = {
+			isa = PBXGroup;
+			children = (
+				045B1DA027285DF4002C0163 /* NytimersappTests.swift */,
+			);
+			path = NytimersappTests;
+			sourceTree = "<group>";
+		};
+		045B1DA927285DF4002C0163 /* NytimersappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				045B1DAA27285DF4002C0163 /* NytimersappUITests.swift */,
+				045B1DAC27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift */,
+			);
+			path = NytimersappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045B1D8527285DF3002C0163 /* Nytimersapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045B1DB027285DF4002C0163 /* Build configuration list for PBXNativeTarget "Nytimersapp" */;
+			buildPhases = (
+				045B1D8227285DF3002C0163 /* Sources */,
+				045B1D8327285DF3002C0163 /* Frameworks */,
+				045B1D8427285DF3002C0163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nytimersapp;
+			productName = Nytimersapp;
+			productReference = 045B1D8627285DF3002C0163 /* Nytimersapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		045B1D9B27285DF4002C0163 /* NytimersappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045B1DB327285DF4002C0163 /* Build configuration list for PBXNativeTarget "NytimersappTests" */;
+			buildPhases = (
+				045B1D9827285DF4002C0163 /* Sources */,
+				045B1D9927285DF4002C0163 /* Frameworks */,
+				045B1D9A27285DF4002C0163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045B1D9E27285DF4002C0163 /* PBXTargetDependency */,
+			);
+			name = NytimersappTests;
+			productName = NytimersappTests;
+			productReference = 045B1D9C27285DF4002C0163 /* NytimersappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		045B1DA527285DF4002C0163 /* NytimersappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045B1DB627285DF4002C0163 /* Build configuration list for PBXNativeTarget "NytimersappUITests" */;
+			buildPhases = (
+				045B1DA227285DF4002C0163 /* Sources */,
+				045B1DA327285DF4002C0163 /* Frameworks */,
+				045B1DA427285DF4002C0163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045B1DA827285DF4002C0163 /* PBXTargetDependency */,
+			);
+			name = NytimersappUITests;
+			productName = NytimersappUITests;
+			productReference = 045B1DA627285DF4002C0163 /* NytimersappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045B1D7E27285DF3002C0163 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					045B1D8527285DF3002C0163 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					045B1D9B27285DF4002C0163 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 045B1D8527285DF3002C0163;
+					};
+					045B1DA527285DF4002C0163 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 045B1D8527285DF3002C0163;
+					};
+				};
+			};
+			buildConfigurationList = 045B1D8127285DF3002C0163 /* Build configuration list for PBXProject "Nytimersapp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045B1D7D27285DF3002C0163;
+			productRefGroup = 045B1D8727285DF3002C0163 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045B1D8527285DF3002C0163 /* Nytimersapp */,
+				045B1D9B27285DF4002C0163 /* NytimersappTests */,
+				045B1DA527285DF4002C0163 /* NytimersappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045B1D8427285DF3002C0163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045B1D9627285DF4002C0163 /* LaunchScreen.storyboard in Resources */,
+				045B1D9327285DF4002C0163 /* Assets.xcassets in Resources */,
+				045B1D9127285DF3002C0163 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045B1D9A27285DF4002C0163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045B1DA427285DF4002C0163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045B1D8227285DF3002C0163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045B1D8E27285DF3002C0163 /* ViewController.swift in Sources */,
+				045B1D8A27285DF3002C0163 /* AppDelegate.swift in Sources */,
+				045B1D8C27285DF3002C0163 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045B1D9827285DF4002C0163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045B1DA127285DF4002C0163 /* NytimersappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045B1DA227285DF4002C0163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045B1DAB27285DF4002C0163 /* NytimersappUITests.swift in Sources */,
+				045B1DAD27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045B1D9E27285DF4002C0163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045B1D8527285DF3002C0163 /* Nytimersapp */;
+			targetProxy = 045B1D9D27285DF4002C0163 /* PBXContainerItemProxy */;
+		};
+		045B1DA827285DF4002C0163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045B1D8527285DF3002C0163 /* Nytimersapp */;
+			targetProxy = 045B1DA727285DF4002C0163 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		045B1D8F27285DF3002C0163 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045B1D9027285DF3002C0163 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		045B1D9427285DF4002C0163 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045B1D9527285DF4002C0163 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045B1DAE27285DF4002C0163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		045B1DAF27285DF4002C0163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045B1DB127285DF4002C0163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C57X2N3FA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nytimersapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caom.hasanhalabi.Nytimersapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045B1DB227285DF4002C0163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C57X2N3FA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nytimersapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caom.hasanhalabi.Nytimersapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		045B1DB427285DF4002C0163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C57X2N3FA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caom.hasanhalabi.NytimersappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nytimersapp.app/Nytimersapp";
+			};
+			name = Debug;
+		};
+		045B1DB527285DF4002C0163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C57X2N3FA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caom.hasanhalabi.NytimersappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nytimersapp.app/Nytimersapp";
+			};
+			name = Release;
+		};
+		045B1DB727285DF4002C0163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C57X2N3FA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caom.hasanhalabi.NytimersappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nytimersapp;
+			};
+			name = Debug;
+		};
+		045B1DB827285DF4002C0163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C57X2N3FA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caom.hasanhalabi.NytimersappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nytimersapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045B1D8127285DF3002C0163 /* Build configuration list for PBXProject "Nytimersapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045B1DAE27285DF4002C0163 /* Debug */,
+				045B1DAF27285DF4002C0163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045B1DB027285DF4002C0163 /* Build configuration list for PBXNativeTarget "Nytimersapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045B1DB127285DF4002C0163 /* Debug */,
+				045B1DB227285DF4002C0163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045B1DB327285DF4002C0163 /* Build configuration list for PBXNativeTarget "NytimersappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045B1DB427285DF4002C0163 /* Debug */,
+				045B1DB527285DF4002C0163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045B1DB627285DF4002C0163 /* Build configuration list for PBXNativeTarget "NytimersappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045B1DB727285DF4002C0163 /* Debug */,
+				045B1DB827285DF4002C0163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045B1D7E27285DF3002C0163 /* Project object */;
+}
