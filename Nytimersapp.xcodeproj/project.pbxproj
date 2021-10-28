@@ -16,6 +16,13 @@
 		045B1DA127285DF4002C0163 /* NytimersappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DA027285DF4002C0163 /* NytimersappTests.swift */; };
 		045B1DAB27285DF4002C0163 /* NytimersappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DAA27285DF4002C0163 /* NytimersappUITests.swift */; };
 		045B1DAD27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DAC27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift */; };
+		045B1DBD27285EDA002C0163 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DBC27285EDA002C0163 /* NetworkManager.swift */; };
+		045B1DBF27285F0D002C0163 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DBE27285F0D002C0163 /* PostData.swift */; };
+		0474A68A272866600017CF39 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474A688272866600017CF39 /* MessageCell.swift */; };
+		0474A68B272866600017CF39 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0474A689272866600017CF39 /* MessageCell.xib */; };
+		049FCD5C272AB8D9006D976A /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FCD5B272AB8D9006D976A /* extension.swift */; };
+		049FCD5E272B2353006D976A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FCD5D272B2353006D976A /* DetailsViewController.swift */; };
+		04B1EC28272861A700AFAC2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B1D8F27285DF3002C0163 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,12 @@
 		045B1DA627285DF4002C0163 /* NytimersappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NytimersappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B1DAA27285DF4002C0163 /* NytimersappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytimersappUITests.swift; sourceTree = "<group>"; };
 		045B1DAC27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytimersappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		045B1DBC27285EDA002C0163 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		045B1DBE27285F0D002C0163 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		0474A688272866600017CF39 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		0474A689272866600017CF39 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		049FCD5B272AB8D9006D976A /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		049FCD5D272B2353006D976A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +114,13 @@
 			children = (
 				045B1D8927285DF3002C0163 /* AppDelegate.swift */,
 				045B1D8B27285DF3002C0163 /* SceneDelegate.swift */,
-				045B1D8D27285DF3002C0163 /* ViewController.swift */,
-				045B1D8F27285DF3002C0163 /* Main.storyboard */,
+				045B1DBB27285EA6002C0163 /* module */,
+				045B1DBA27285E9B002C0163 /* controller */,
+				045B1DB927285E95002C0163 /* view */,
 				045B1D9227285DF4002C0163 /* Assets.xcassets */,
 				045B1D9427285DF4002C0163 /* LaunchScreen.storyboard */,
 				045B1D9727285DF4002C0163 /* Info.plist */,
+				049FCD5B272AB8D9006D976A /* extension.swift */,
 			);
 			path = Nytimersapp;
 			sourceTree = "<group>";
@@ -125,6 +140,34 @@
 				045B1DAC27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift */,
 			);
 			path = NytimersappUITests;
+			sourceTree = "<group>";
+		};
+		045B1DB927285E95002C0163 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				045B1D8F27285DF3002C0163 /* Main.storyboard */,
+				0474A688272866600017CF39 /* MessageCell.swift */,
+				0474A689272866600017CF39 /* MessageCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		045B1DBA27285E9B002C0163 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				045B1D8D27285DF3002C0163 /* ViewController.swift */,
+				049FCD5D272B2353006D976A /* DetailsViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		045B1DBB27285EA6002C0163 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				045B1DBC27285EDA002C0163 /* NetworkManager.swift */,
+				045B1DBE27285F0D002C0163 /* PostData.swift */,
+			);
+			path = module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045B1D9627285DF4002C0163 /* LaunchScreen.storyboard in Resources */,
+				0474A68B272866600017CF39 /* MessageCell.xib in Resources */,
 				045B1D9327285DF4002C0163 /* Assets.xcassets in Resources */,
 				045B1D9127285DF3002C0163 /* Main.storyboard in Resources */,
 			);
@@ -241,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B1EC28272861A700AFAC2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045B1DBF27285F0D002C0163 /* PostData.swift in Sources */,
+				049FCD5C272AB8D9006D976A /* extension.swift in Sources */,
+				045B1DBD27285EDA002C0163 /* NetworkManager.swift in Sources */,
+				049FCD5E272B2353006D976A /* DetailsViewController.swift in Sources */,
 				045B1D8E27285DF3002C0163 /* ViewController.swift in Sources */,
 				045B1D8A27285DF3002C0163 /* AppDelegate.swift in Sources */,
 				045B1D8C27285DF3002C0163 /* SceneDelegate.swift in Sources */,
+				0474A68A272866600017CF39 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
