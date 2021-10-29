@@ -14,7 +14,7 @@ class ViewController: UIViewController,UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title="Ny Time Most Popular Article"
-        
+        fetchData()
         tableView.dataSource=self
         tableView.delegate = self
         
@@ -22,7 +22,7 @@ class ViewController: UIViewController,UITableViewDelegate {
         // Do any additional setup after loading the view.
         tableView.separatorColor = UIColor.darkGray
         tableView.separatorInset = .zero
-        fetchData()
+       
         
     }
     
@@ -64,8 +64,7 @@ extension ViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath ) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell1") as! MessageCell
         
-        //        let imageurl = URL(string: self.posts[indexPath.row].media[indexPath.row].metadata[indexPath.row].url)
-        //        let data1 = try? Data(contentsOf: imageurl!)
+        
         let mediaclass = self.posts[indexPath.row].media
         if mediaclass.isEmpty{
             cell.imagev.image = UIImage.init(named: "AppIcon")
