@@ -26,7 +26,7 @@ class ViewController: UIViewController,UITableViewDelegate {
         
     }
     
-    
+    // MARK: Datafetch
     func fetchData() {
         if let url = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=An55tTl23wCgXd2jASDZIxvdYT55fhI7") {
             let session = URLSession(configuration: .default)
@@ -58,7 +58,7 @@ class ViewController: UIViewController,UITableViewDelegate {
     
     
 }
-// Mark - tableview controll
+    // MARK: tableview controll
 extension ViewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath ) -> UITableViewCell {

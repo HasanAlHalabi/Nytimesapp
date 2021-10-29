@@ -16,7 +16,6 @@
 		045B1DA127285DF4002C0163 /* NytimersappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DA027285DF4002C0163 /* NytimersappTests.swift */; };
 		045B1DAB27285DF4002C0163 /* NytimersappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DAA27285DF4002C0163 /* NytimersappUITests.swift */; };
 		045B1DAD27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DAC27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift */; };
-		045B1DBD27285EDA002C0163 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DBC27285EDA002C0163 /* NetworkManager.swift */; };
 		045B1DBF27285F0D002C0163 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1DBE27285F0D002C0163 /* PostData.swift */; };
 		0474A68A272866600017CF39 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474A688272866600017CF39 /* MessageCell.swift */; };
 		0474A68B272866600017CF39 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0474A689272866600017CF39 /* MessageCell.xib */; };
@@ -56,7 +55,6 @@
 		045B1DA627285DF4002C0163 /* NytimersappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NytimersappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B1DAA27285DF4002C0163 /* NytimersappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytimersappUITests.swift; sourceTree = "<group>"; };
 		045B1DAC27285DF4002C0163 /* NytimersappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytimersappUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		045B1DBC27285EDA002C0163 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		045B1DBE27285F0D002C0163 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		0474A688272866600017CF39 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		0474A689272866600017CF39 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 		045B1DBB27285EA6002C0163 /* module */ = {
 			isa = PBXGroup;
 			children = (
-				045B1DBC27285EDA002C0163 /* NetworkManager.swift */,
 				045B1DBE27285F0D002C0163 /* PostData.swift */,
 			);
 			path = module;
@@ -305,7 +302,6 @@
 			files = (
 				045B1DBF27285F0D002C0163 /* PostData.swift in Sources */,
 				049FCD5C272AB8D9006D976A /* extension.swift in Sources */,
-				045B1DBD27285EDA002C0163 /* NetworkManager.swift in Sources */,
 				049FCD5E272B2353006D976A /* DetailsViewController.swift in Sources */,
 				045B1D8E27285DF3002C0163 /* ViewController.swift in Sources */,
 				045B1D8A27285DF3002C0163 /* AppDelegate.swift in Sources */,

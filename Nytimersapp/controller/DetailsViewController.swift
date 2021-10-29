@@ -27,10 +27,10 @@ class DetailsViewController: UIViewController {
         //        articleimage.image =  UIImage.init(named: "AppIcon")
         if image == "AppIcon"{
             articleimage.image =  UIImage.init(named: "ionnetimes")
-            
+            articleimage.contentMode = .scaleAspectFit
         }else{
             articleimage.load(urlString: "\(image)")
-            
+            articleimage.contentMode = .scaleAspectFit
         }
         
         
