@@ -10,12 +10,6 @@ struct Results: Decodable {
     let results: [Post]
     
 }
-struct MediaMetaData: Codable {
-    let url: String
-    let format: String
-    let height: Int
-    let width: Int
-}
 
 
 //struct PostMedia: Codable {
@@ -37,17 +31,7 @@ struct MediaMetaData: Codable {
 //}
 
 
-enum Constants {
-    
-    static let media = "media"
-        static let mediaMetadata = "media-metadata"
-    static let url = "url"
-    static let multimedia12 = "multimedia"
-    
-}
-enum mediaMetadata:Decodable{
-        case url, format, height
-    }
+
 struct metadataurl :Decodable{
     let url :String
 }
