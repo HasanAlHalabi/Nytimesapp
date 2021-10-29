@@ -24,6 +24,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var articleimage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title="Article Details"
         //        articleimage.image =  UIImage.init(named: "AppIcon")
         if image == "AppIcon"{
             articleimage.image =  UIImage.init(named: "ionnetimes")
