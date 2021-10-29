@@ -57,9 +57,12 @@ struct Post: Decodable, Identifiable {
        }
     let asset_id: Int
     let title: String
-    let url: String?
+    let url: String 
     let byline : String
     let published_date : String
+    let abstract: String
+    let adx_keywords : String
+    let updated : String
    let media:[Postmetadata]
     
 }

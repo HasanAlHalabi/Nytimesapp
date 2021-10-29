@@ -40,13 +40,13 @@
                         </subviews>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW7-Fr-RM4">
-                        <rect key="frame" x="95" y="39.5" width="383" height="18"/>
+                        <rect key="frame" x="95" y="39.5" width="353" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" systemColor="systemGrayColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-Bz-itb">
-                        <rect key="frame" x="95" y="10" width="383" height="19.5"/>
+                        <rect key="frame" x="95" y="10" width="353" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                     <constraint firstItem="zrf-Bz-itb" firstAttribute="leading" secondItem="4lC-7h-oBV" secondAttribute="trailing" constant="8" symbolic="YES" id="hGh-ot-Cxh"/>
                     <constraint firstItem="xW7-Fr-RM4" firstAttribute="trailing" secondItem="zrf-Bz-itb" secondAttribute="trailing" id="k9C-Dk-5Gb"/>
                     <constraint firstAttribute="bottom" secondItem="g3D-UB-HpF" secondAttribute="bottom" constant="12" id="tMy-KT-Mqm"/>
-                    <constraint firstAttribute="trailing" secondItem="zrf-Bz-itb" secondAttribute="trailing" constant="10" id="u52-QD-NCO"/>
+                    <constraint firstAttribute="trailing" secondItem="zrf-Bz-itb" secondAttribute="trailing" constant="40" id="u52-QD-NCO"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
