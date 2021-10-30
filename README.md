@@ -16,7 +16,8 @@ this youtube link for explain the project : https://youtu.be/8kNbm5UZmCE
 
 ## GIF
 ![mytimes app](assest/app1.gif)
-
+## UNit Test and UI
+![mytimes app UI TEST](assest/unityanduitest.png)
 ## API Details:
 
  -  Base Url = https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=
