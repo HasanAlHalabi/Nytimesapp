@@ -12,25 +12,6 @@ struct Results: Decodable {
 }
 
 
-//struct PostMedia: Codable {
-//
-//    let type: String
-//    let subtype: String
-//    let caption: String
-//    let copyright: String
-//    let approved_for_syndication: Bool
-//    enum CodingKeys : String,CodingKey {
-//        case metadata = "metadata"
-//    }
-//
-//    init(from decoder: Decoder) throws {
-//
-//    }
-//
-//
-//}
-
-
 
 struct metadataurl :Decodable{
     let url :String
