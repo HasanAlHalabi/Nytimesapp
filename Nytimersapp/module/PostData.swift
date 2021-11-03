@@ -14,7 +14,8 @@ struct Results: Decodable {
 
 
 struct metadataurl :Decodable{
-    let url :String
+    var url: String
+    var format: String
 }
 struct Post: Decodable, Identifiable {
     var id: String {

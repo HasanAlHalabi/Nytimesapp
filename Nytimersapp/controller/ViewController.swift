@@ -9,12 +9,15 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate {
     var imageurlstring :String = " "
-    var posts = [Post]()
+    let detailsSegueId = "GotoDetails"
+    var posts : [MVVMmodule] = []
+    var selectedArticle: MVVMmodule!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
+        fetchData()
         super.viewDidLoad()
         navigationItem.title="Ny Time Most Popular Article"
-        fetchData()
+        
         tableView.dataSource=self
         tableView.delegate = self
         
@@ -28,6 +31,7 @@ class ViewController: UIViewController,UITableViewDelegate {
     
     // MARK: Datafetch
     func fetchData() {
+        
         if let url = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=An55tTl23wCgXd2jASDZIxvdYT55fhI7") {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
@@ -38,12 +42,12 @@ class ViewController: UIViewController,UITableViewDelegate {
                             let result = try decoder.decode(Results.self, from: safeData)
                             
                             DispatchQueue.main.async {
-                                
-                                self.posts = result.results
+                               
+                                self.posts = result.results.map{MVVMmodule( mvvmModule : $0)}
                                 
                                 self.tableView.reloadData()
                                 
-                                
+                                print ("\(self.imageurlstring) ")
                             }
                             
                         } catch {
@@ -65,20 +69,16 @@ extension ViewController:UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell1") as! MessageCell
         
         
-        let mediaclass = self.posts[indexPath.row].media
-        if mediaclass.isEmpty{
-            cell.imagev.image = UIImage.init(named: "AppIcon")
-            cell.titleLable.text=self.posts[indexPath.row].title
-            cell.ByName.text=self.posts[indexPath.row].byline
-            cell.DateText.text=self.posts[indexPath.row].published_date
-        }else{
-            cell.imagev.load(urlString: self.posts[indexPath.row].media[0].metadata[0].url )
-            
-            cell.titleLable.text=self.posts[indexPath.row].title
-            cell.ByName.text=self.posts[indexPath.row].byline
-            cell.DateText.text=self.posts[indexPath.row].published_date
-        }
         
+        cell.articleViewModel = posts[indexPath.row]
+//            cell.titleLable.text=self.posts[indexPath.row].title
+//            cell.ByName.text=self.posts[indexPath.row].byline
+//            cell.DateText.text=self.posts[indexPath.row].published_date
+//        cell.imagev.load(urlString: self.imageurlstring)
+           // cell.imagev.load(urlString: self.posts[indexPath.row].media[0].metadata[0].url )
+         
+       
+
         
         
         return cell
@@ -92,29 +92,17 @@ extension ViewController:UITableViewDataSource{
         return 133
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailView")as! DetailsViewController
-        let mediaclass = self.posts[indexPath.row].media
-        if mediaclass.isEmpty{
-            vc.abstract = self.posts[indexPath.row].abstract
-            vc.titletext = self.posts[indexPath.row].title
-            vc.byname = self.posts[indexPath.row].byline
-            vc.url = self.posts[indexPath.row].url
-            vc.adx_keywords = self.posts[indexPath.row].adx_keywords
-            vc.updated = self.posts[indexPath.row].updated
-            vc.image = "AppIcon"
-            
-        }else{
-            vc.adx_keywords = self.posts[indexPath.row].adx_keywords
-            vc.abstract = self.posts[indexPath.row].abstract
-            vc.titletext = self.posts[indexPath.row].title
-            vc.byname = self.posts[indexPath.row].byline
-            vc.url = self.posts[indexPath.row].url
-            vc.updated = self.posts[indexPath.row].updated
-            vc.image = self.posts[indexPath.row].media[0].metadata[2].url
-        }
-        navigationController?.pushViewController(vc, animated: true)
+        selectedArticle = posts[indexPath.row]
+        performSegue(withIdentifier: detailsSegueId, sender: nil)
+        self.tableView.deselectRow(at: indexPath, animated: true)
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailView")as! DetailsViewController
+
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == detailsSegueId {
+            let detailsVC = segue.destination as! DetailsViewController
+            detailsVC.articleViewModel = selectedArticle
+        }
+    }
 }
 

@@ -16,6 +16,19 @@ class MessageCell: UITableViewCell {
     @IBOutlet weak var DateText: UILabel!
     @IBOutlet weak var leftImagevide: UIImageView!
     @IBOutlet weak var ByName: UILabel!
+    
+    
+    var articleViewModel: MVVMmodule! {
+        didSet {
+            titleLable.text = articleViewModel.title
+            ByName.text = articleViewModel.byline
+            DateText.text = articleViewModel.published_date
+            
+            imagev.load(urlString: articleViewModel.imageUrlString ?? "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png")
+            leftImagevide.load(urlString: articleViewModel.imageUrlString ?? "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png")
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
