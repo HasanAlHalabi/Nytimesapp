@@ -13,9 +13,21 @@ class ViewController: UIViewController,UITableViewDelegate {
     var posts : [MVVMmodule] = []
     var selectedArticle: MVVMmodule!
      var networkManager = ApiCaller()
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
-        fetchData()
+        networkManager.fetchallData{ result in
+            DispatchQueue.main.async {
+               
+                self.posts = result.map{MVVMmodule( mvvmModule : $0)}
+                
+                self.tableView.reloadData()
+                
+                
+            }
+        }
+    
+//        fetchData()
         super.viewDidLoad()
         navigationItem.title="Ny Time Most Popular Article"
         
@@ -26,7 +38,8 @@ class ViewController: UIViewController,UITableViewDelegate {
         // Do any additional setup after loading the view.
         tableView.separatorColor = UIColor.darkGray
         tableView.separatorInset = .zero
-       
+        
+     
         
     }
     
@@ -36,36 +49,36 @@ class ViewController: UIViewController,UITableViewDelegate {
     
     
     
-    func fetchData() {
-        
-        if let url = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=An55tTl23wCgXd2jASDZIxvdYT55fhI7") {
-            let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url) { (data, response, error) in
-                if error == nil {
-                    let decoder = JSONDecoder()
-                    if let safeData = data {
-                        do {
-                            let result = try decoder.decode(Results.self, from: safeData)
-                            
-                            DispatchQueue.main.async {
-                               
-                                self.posts = result.results.map{MVVMmodule( mvvmModule : $0)}
-                                
-                                self.tableView.reloadData()
-                                
-                                
-                            }
-                            
-                        } catch {
-                            print("it a error here \(error)")
-                        }
-                    }
-                }
-            }
-            task.resume()
-        }
-    }
-    
+//    func fetchData() {
+//
+//        if let url = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=An55tTl23wCgXd2jASDZIxvdYT55fhI7") {
+//            let session = URLSession(configuration: .default)
+//            let task = session.dataTask(with: url) { (data, response, error) in
+//                if error == nil {
+//                    let decoder = JSONDecoder()
+//                    if let safeData = data {
+//                        do {
+//                            let result = try decoder.decode(Results.self, from: safeData)
+//
+//                            DispatchQueue.main.async {
+//
+//                                self.posts = result.results.map{MVVMmodule( mvvmModule : $0)}
+//
+//                                self.tableView.reloadData()
+//
+//
+//                            }
+//
+//                        } catch {
+//                            print("it a error here \(error)")
+//                        }
+//                    }
+//                }
+//            }
+//            task.resume()
+//        }
+//    }
+//
     
 }
     // MARK: tableview controll

@@ -9,7 +9,7 @@ import Foundation
 class ApiCaller: ObservableObject {
 @Published  var posts : [Post] = []
 
-func fetchData() {
+    func fetchallData(comp : @escaping ([Post])->()) {
     
     if let url = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=An55tTl23wCgXd2jASDZIxvdYT55fhI7") {
         let session = URLSession(configuration: .default)
@@ -19,13 +19,8 @@ func fetchData() {
                 if let safeData = data {
                     do {
                         let result = try decoder.decode(Results.self, from: safeData)
-                        
-                        DispatchQueue.main.async {
-                           
-                            self.posts = result.results
-                            
-                            
-                        }
+                        comp(result.results)
+                   
                         
                     } catch {
                         print("it a error here \(error)")
