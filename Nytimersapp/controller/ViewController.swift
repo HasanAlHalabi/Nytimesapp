@@ -12,6 +12,7 @@ class ViewController: UIViewController,UITableViewDelegate {
     let detailsSegueId = "GotoDetails"
     var posts : [MVVMmodule] = []
     var selectedArticle: MVVMmodule!
+     var networkManager = ApiCaller()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         fetchData()
@@ -30,6 +31,11 @@ class ViewController: UIViewController,UITableViewDelegate {
     }
     
     // MARK: Datafetch
+    
+
+    
+    
+    
     func fetchData() {
         
         if let url = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=An55tTl23wCgXd2jASDZIxvdYT55fhI7") {
@@ -47,7 +53,7 @@ class ViewController: UIViewController,UITableViewDelegate {
                                 
                                 self.tableView.reloadData()
                                 
-                                print ("\(self.imageurlstring) ")
+                                
                             }
                             
                         } catch {

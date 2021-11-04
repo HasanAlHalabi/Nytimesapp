@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		043FF7EB27332DBB00BDAE0B /* MVVMViewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FF7EA27332DBB00BDAE0B /* MVVMViewModule.swift */; };
+		043FF7ED27339BEA00BDAE0B /* apicaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FF7EC27339BEA00BDAE0B /* apicaller.swift */; };
 		045B1D8A27285DF3002C0163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1D8927285DF3002C0163 /* AppDelegate.swift */; };
 		045B1D8C27285DF3002C0163 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1D8B27285DF3002C0163 /* SceneDelegate.swift */; };
 		045B1D8E27285DF3002C0163 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B1D8D27285DF3002C0163 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		043FF7EA27332DBB00BDAE0B /* MVVMViewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModule.swift; sourceTree = "<group>"; };
+		043FF7EC27339BEA00BDAE0B /* apicaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apicaller.swift; sourceTree = "<group>"; };
 		045B1D8627285DF3002C0163 /* Nytimersapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nytimersapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B1D8927285DF3002C0163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045B1D8B27285DF3002C0163 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				045B1DBE27285F0D002C0163 /* PostData.swift */,
+				043FF7EC27339BEA00BDAE0B /* apicaller.swift */,
 			);
 			path = module;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				049FCD5E272B2353006D976A /* DetailsViewController.swift in Sources */,
 				045B1D8E27285DF3002C0163 /* ViewController.swift in Sources */,
 				045B1D8A27285DF3002C0163 /* AppDelegate.swift in Sources */,
+				043FF7ED27339BEA00BDAE0B /* apicaller.swift in Sources */,
 				045B1D8C27285DF3002C0163 /* SceneDelegate.swift in Sources */,
 				043FF7EB27332DBB00BDAE0B /* MVVMViewModule.swift in Sources */,
 				0474A68A272866600017CF39 /* MessageCell.swift in Sources */,
